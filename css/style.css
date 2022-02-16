@@ -1,0 +1,46 @@
+.bg-shape {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  z-index: -1;
+}
+
+.text-semi-dark {
+  color: #6d6d6d;
+}
+
+.service-div .card {
+  border-radius: 2.5rem !important;
+  height: 22.5rem;
+}
+
+.price-div {
+  background-color: #dfdfdf;
+  box-shadow: inset 0 10px 10px #69696944, inset 0 -5px 5px #9b9b9b44;
+}
+.price-div .card {
+  border-radius: 1rem !important;
+  height: 20rem;
+}
+
+.content-us-div {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.content-us-div .content-bg {
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  width: 100%;
+  transform: scale(1.1);
+  z-index: 1;
+}
+
+@media (min-width: 1024px) {
+  .xl-svg {
+    width: 100% !important;
+  }
+}/*# sourceMappingURL=style.css.map */
