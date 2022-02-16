@@ -1,13 +1,48 @@
-.bg-shape {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 50%;
-    z-index: -1;
+html {
+    scroll-behavior: smooth;
 }
 
 .text-semi-dark {
     color: #6d6d6d;
+}
+
+.home-div {
+    position: relative;
+    .bg-shape {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50%;
+        z-index: -1;
+    }
+    .home-side-link {
+        position: absolute;
+        left: 20px;
+        top: 40vh;
+        img {
+            transition: .25s;
+            &:hover {
+                transform: scale(1.75);
+            }
+        }
+    }
+    .about-us-link {
+        width: 3rem;
+        height: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        position: absolute;
+        bottom: 3rem;
+        left: 0;
+        right: 0;
+        box-shadow: 0 0 10px 5px #91919169;
+        margin: auto;
+        &:hover {
+            box-shadow: 0 0 15px 8px #66666677;
+        }
+    }
 }
 
 .service-div {

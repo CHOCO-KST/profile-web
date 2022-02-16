@@ -1,12 +1,13 @@
-<svg id="_003-facebook" data-name="003-facebook" xmlns="http://www.w3.org/2000/svg" width="8.969" height="17.938" viewBox="0 0 8.969 17.938">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10.047" height="5.638" viewBox="0 0 10.047 5.638">
   <defs>
-    <style>
-      .cls-1 {
-        fill: #fff;
-      }
-    </style>
+    <linearGradient id="linear-gradient" x1="1.119" y1="0.577" x2="0.5" y2="0.577" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#6156f9"/>
+      <stop offset="1" stop-color="#1a129f"/>
+    </linearGradient>
   </defs>
-  <g id="Group_1283" data-name="Group 1283">
-    <path id="Path_1205" data-name="Path 1205" class="cls-1" d="M133.605,6.166V3.924A1.121,1.121,0,0,1,134.727,2.8h1.121V0h-2.242a3.363,3.363,0,0,0-3.363,3.363v2.8H128v2.8h2.242v8.969h3.363V8.969h2.242l1.121-2.8Z" transform="translate(-128)"/>
+  <g id="_003-facebook" data-name="003-facebook" transform="translate(10.047 -128) rotate(90)">
+    <g id="Group_1283" data-name="Group 1283" transform="translate(128)">
+      <path id="Path_1205" data-name="Path 1205" d="M131.523,3.454V2.2a.67.67,0,0,1,.7-.628h.7V0h-1.409a2.009,2.009,0,0,0-2.114,1.884v1.57H128v1.57h1.409v5.023h2.114V5.023h1.409l.7-1.57Z" transform="translate(-128)" fill="url(#linear-gradient)"/>
+    </g>
   </g>
 </svg>
