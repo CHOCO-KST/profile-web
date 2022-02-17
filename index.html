@@ -12,52 +12,64 @@
     <link rel="stylesheet" href="./node_modules/slick-carousel/slick/slick-theme.css">
 </head>
 <body>
+    <div class=" float-navbar bg-secondary" id="float-navbar">
+        <ul class=" navbar-nav d-flex flex-row fw-bold">
+            <li class="nav-item mx-3"><a href="#home-div" class="nav-link text-light">HOME</a></li>
+            <li class="nav-item mx-3"><a href="#who-we-div" class="nav-link text-light">ABOUT</a></li>
+            <li class="nav-item mx-3"><a href="#service-div" class="nav-link text-light">SERVICE</a></li>
+            <li class="nav-item mx-3"><a href="#price-div" class="nav-link text-light">PRICE</a></li>
+            <li class="nav-item mx-3"><a href="#content-us-div" class="nav-link text-light">CONTACT</a></li>
+        </ul>
+    </div>
     <!-- home start -->
-    <section class=" container-fluid home-div">
+    <section class=" container-fluid home-div" id="home-div">
         <img src="_data/svg/Bg Shape.svg" class=" bg-shape">
-        <div class=" home-side-link d-flex flex-column align-items-center">
+        <div class=" home-side-link d-flex flex-column align-items-center wow animate__bounceIn animate__delay-2s">
             <img src="./_data/svg/003-facebook.svg" width="20" height="20" class=" mb-3">
             <img src="./_data/svg/001-twitter-logo-silhouette.svg" width="20" height="20" class=" mb-3">
             <img src="./_data/svg/003-google.svg" width="20" height="20" class=" mb-3">
             <img src="./_data/svg/004-instagram.svg" width="20" height="20" class=" mb-3">
             <div class=" bg-primary" style="width: .25rem; height: 2.5rem;" ></div>
         </div>
-        <a class=" about-us-link" href="#who-we">
-            <img src="./_data/svg/mouse.svg">
+        <a class=" about-us-link wow animate__fadeIn animate__delay-2s" href="#who-we">
+            <img src="./_data/svg/mouse.svg" class=" animate__animated">
         </a>
         <div class=" container">
             <div class=" row vh-100">
                 <!-- navbar start -->
                 <div class=" col-12">
-                    <nav class=" navbar navbar-light d-flex justify-content-between">
-                        <div class=" navbar-brand d-flex flex-row align-items-end">
-                            <img src="_data/svg/logo-header.svg" alt="logo" width="50%">
-                            <h1>Marketing</h1>
-                        </div>
-                        <div class=" d-none d-lg-block">
-                            <ul class=" navbar-nav d-flex flex-row fw-bolder">
-                                <li class="nav-item ms-5"><a href="#" class="nav-link text-white">HOME</a></li>
-                                <li class="nav-item ms-5"><a href="#" class="nav-link text-white">SERVICES</a></li>
-                                <li class="nav-item ms-5"><a href="#" class="nav-link text-white">PRICES</a></li>
-                                <li class="nav-item ms-5"><a href="#" class="nav-link text-white">CONTACT</a></li>
-                            </ul>
-                        </div>
-                        <div class=" d-block d-lg-none">
-                            <button class=" btn btn-light me-3" style="border-radius: 50% !important;">
-                                <i class=" feather feather-menu"></i>
-                            </button>
-                        </div>
-                    </nav>
+                    <div class=" container">
+                        <nav class=" navbar navbar-light d-flex justify-content-between">
+                            <div class=" navbar-brand d-flex flex-row align-items-end animate__animated animate__flipInX">
+                                <img src="_data/svg/logo-header.svg" alt="logo" width="50%">
+                                <h1>Marketing</h1>
+                            </div>
+                            <div class=" d-none d-lg-block animate__animated animate__flipInX animate__delay-2s">
+                                <ul class=" navbar-nav d-flex flex-row fw-bolder">
+                                    <li class="nav-item ms-5"><a href="#home-div" class="nav-link text-light">HOME</a></li>
+                                    <li class="nav-item ms-5"><a href="#who-we-div" class="nav-link text-light">ABOUT</a></li>
+                                    <li class="nav-item ms-5"><a href="#service-div" class="nav-link text-light">SERVICE</a></li>
+                                    <li class="nav-item ms-5"><a href="#price-div" class="nav-link text-light">PRICE</a></li>
+                                    <li class="nav-item ms-5"><a href="#content-us-div" class="nav-link text-light">CONTACT</a></li>
+                                </ul>
+                            </div>
+                            <div class=" d-block d-lg-none animate__animated animate__heartBeat">
+                                <button class=" btn btn-light me-3" style="border-radius: 50% !important;">
+                                    <i class=" feather feather-menu"></i>
+                                </button>
+                            </div>
+                        </nav>
+                    </div>
                 </div>
                 <!-- navbar end -->
                 <!-- social media start -->
                 <div class=" col-12">
                     <div class=" row d-flex flex-row-reverse">
                         <div class=" col-12 col-lg-6 mt-5 d-flex justify-content-center">
-                            <img src="_data/svg/xl-social-media.svg" alt="social-media" class=" xl-svg w-75">
+                            <img src="_data/svg/xl-social-media.svg" alt="social-media" class=" xl-svg w-75 wow animate__lightSpeedInRight">
                         </div>
                         <div class=" col-12 col-lg-6 d-flex align-items-center mt-5">
-                            <div class=" text-semi-dark">
+                            <div class=" text-semi-dark wow animate__fadeInLeft animate__delay-1s">
                                 <h2 class=" fw-light">SOCIAL MEDIA</h2>
                                 <h2 class=" fw-bolder" style="font-size: 2.75rem;">FOR BUSINESS !</h2>
                                 <p style="font-size: .75rem;">PERFOMANCE BASED SOCIAL MEDIA AGENCY. <br> WE ARE LOREM MEDIA</p>
@@ -73,14 +85,15 @@
     <!-- home end -->
 
     <!-- who we are start -->
-    <section class=" container who-we-div" id="who-we">
-        <div class=" row vh-100">
+    <section class=" container who-we-div vh-100" id="who-we-div">
+        <div class=" col-12 p-5"></div>
+        <div class=" row ">
             <div class=" row">
                 <div class=" col-12 col-lg-6 mt-5 mt-lg-0 d-flex justify-content-center">
-                    <img src="_data/svg/xl-who-we-are.svg" alt="who-we-are" class=" xl-svg w-75">
+                    <img src="_data/svg/xl-who-we-are.svg" alt="who-we-are" class=" xl-svg w-75 wow animate__lightSpeedInLeft">
                 </div>
                 <div class=" col-12 col-md-8 col-lg-6 d-flex align-items-center mt-5 mt-lg-0 ps-2 ps-xl-4">
-                    <div class=" text-semi-dark">
+                    <div class=" ms-3 text-semi-dark wow animate__fadeInRight animate__delay-1s">
                         <span class=" text-secondary">Biography</span>
                         <h2 class=" fw-light">Who We Are</h2>
                         <p style="font-size: .75rem;">Lorem Media is a full-service social media agency. We offer businesses innovative solutions that deliver the right type of audience to you in the most effective strategies possible. 
@@ -99,19 +112,17 @@
     </section>
     <!-- who we are end -->
     
-    <div class=" col-12 p-5"></div>
-
     <!-- Our Services start -->
-    <section class=" container service-div">
+    <section class=" container service-div" id="service-div">
         <div class=" row">
-            <div class=" col-12">
+            <div class=" col-12 ms-2 wow animate__flipInX">
                 <span class=" text-secondary">OUR SERVICES</span>
                 <h2 class=" fw-light">What We Offer</h2>
             </div>
             <!-- Services Cards start -->
             <div class=" col-12 row">
-                <div class=" col-12 col-md-6 col-lg-4">
-                    <div class=" card shadow-lg mx-2 mx-md-3 mx-lg-5 mt-5">
+                <div class=" col-12 col-md-6 col-lg-4 wow animate__fadeInRight animate__delay-1s">
+                    <div class=" card shadow-lg mx-2 mx-md-3 mx-lg-2 mx-xl-5 mt-5">
                         <div class=" card-body d-flex flex-column align-items-center justify-content-around">
                             <img src="_data/svg/sm-process.svg" alt="process" class=" w-25">
                             <br>    
@@ -126,8 +137,8 @@
                         </div>
                     </div>
                 </div>
-                <div class=" col-12 col-md-6 col-lg-4">
-                    <div class=" card shadow-lg mx-2 mx-md-3 mx-lg-5 mt-5">
+                <div class=" col-12 col-md-6 col-lg-4 wow animate__zoomIn animate__delay-2s">
+                    <div class=" card shadow-lg mx-2 mx-md-3 mx-lg-2 mx-xl-5 mt-5">
                         <div class=" card-body d-flex flex-column align-items-center justify-content-around">
                             <img src="_data/svg/sm-social-media.svg" alt="process" class=" w-25">
                             <br>    
@@ -143,8 +154,8 @@
                         </div>
                     </div>
                 </div>
-                <div class=" col-12 col-md-6 col-lg-4">
-                    <div class=" card shadow-lg mx-2 mx-md-3 mx-lg-5 mt-5">
+                <div class=" col-12 col-md-6 col-lg-4 wow animate__fadeInLeft animate__delay-1s">
+                    <div class=" card shadow-lg mx-2 mx-md-3 mx-lg-2 mx-xl-5 mt-5">
                         <div class=" card-body d-flex flex-column align-items-center justify-content-around">
                             <img src="_data/svg/sm-responsive.svg" alt="process" class=" w-25">
                             <br>    
@@ -160,8 +171,8 @@
                         </div>
                     </div>
                 </div>
-                <div class=" col-12 col-md-6 col-lg-4">
-                    <div class=" card shadow-lg mx-2 mx-md-3 mx-lg-5 mt-5">
+                <div class=" col-12 col-md-6 col-lg-4 wow animate__fadeInRight animate__delay-2s">
+                    <div class=" card shadow-lg mx-2 mx-md-3 mx-lg-2 mx-xl-5 mt-5">
                         <div class=" card-body d-flex flex-column align-items-center justify-content-around">
                             <img src="_data/svg/sm-analysis.svg" alt="process" class=" w-25">
                             <br>    
@@ -177,8 +188,8 @@
                         </div>
                     </div>
                 </div>
-                <div class=" col-12 col-md-6 col-lg-4">
-                    <div class=" card shadow-lg mx-2 mx-md-3 mx-lg-5 mt-5">
+                <div class=" col-12 col-md-6 col-lg-4 wow animate__zoomIn animate__delay-3s">
+                    <div class=" card shadow-lg mx-2 mx-md-3 mx-lg-2 mx-xl-5 mt-5">
                         <div class=" card-body d-flex flex-column align-items-center justify-content-around">
                             <img src="_data/svg/sm-social-media-1.svg" alt="process" class=" w-25">
                             <br>    
@@ -194,8 +205,8 @@
                         </div>
                     </div>
                 </div>
-                <div class=" col-12 col-md-6 col-lg-4">
-                    <div class=" card shadow-lg mx-2 mx-md-3 mx-lg-5 mt-5">
+                <div class=" col-12 col-md-6 col-lg-4 wow animate__fadeInLeft animate__delay-2s">
+                    <div class=" card shadow-lg mx-2 mx-md-3 mx-lg-2 mx-xl-5 mt-5">
                         <div class=" card-body d-flex flex-column align-items-center justify-content-around">
                             <img src="_data/svg/sm-computer.svg" alt="process" class=" w-25">
                             <br>    
@@ -211,111 +222,115 @@
                         </div>
                     </div>
                 </div>
-                <div class=" col-12 p-5"></div>
             </div>
             <!-- Services Cards end -->
         </div>
     </section>
     <!-- Our Services end -->
 
+    <div class=" col-12 p-5"></div>
+    
     <!-- Our Pricing start -->
-    <section class=" container-fluid price-div">
+    <section class=" container-fluid price-div" id="price-div">
         <div class=" container">
             <div class=" row">
-                <div class=" col-12 d-flex flex-column align-items-center mt-5">
+                <div class=" col-12 d-flex flex-column align-items-center mt-5 wow animate__flipInX">
                     <span class=" text-secondary">PRICING</span>
                     <h2 class=" fw-light">Our Pricing</h2>
                 </div>
-                <div class="price-slick">
-                    <div class=" mx-4 mx-lg-3">
-                        <div class=" card shadow-lg mx-4 mx-lg-5 my-5">
-                            <div class=" card-body d-flex flex-column align-items-center justify-content-around">  
-                                <span style="font-size: 1rem;" class=" text-black">Silver Package</span>
-                                <p style="font-size: .75rem;" class=" text-semi-dark text-center">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto eos nihil officia magni sequi dolorum, molestiae sapiente itaque ipsa optio!
-                                </p>
-                                <span class=" h4 text-primary fw-light">$ 50</span>
-                                <button class=" btn btn-outline-primary px-3">See Details</button>
+                <div class=" col-12 wow animate__bounceIn animate__delay-2s">
+                    <div class=" price-slick">
+                        <div class=" mx-4 mx-lg-3">
+                            <div class=" card shadow-lg mx-4 mx-lg-2 mx-xl-5 my-5">
+                                <div class=" card-body d-flex flex-column align-items-center justify-content-around">  
+                                    <span style="font-size: 1rem;" class=" text-black">Silver Package</span>
+                                    <p style="font-size: .75rem;" class=" text-semi-dark text-center">
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto eos nihil officia magni sequi dolorum, molestiae sapiente itaque ipsa optio!
+                                    </p>
+                                    <span class=" h4 text-primary fw-light">$ 50</span>
+                                    <button class=" btn btn-outline-primary px-3">See Details</button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class=" mx-4 mx-lg-3">
-                        <div class=" card shadow-lg mx-4 mx-lg-5 my-5">
-                            <div class=" card-body d-flex flex-column align-items-center justify-content-around">  
-                                <span style="font-size: 1rem;" class=" text-black">Gold Package</span>
-                                <p style="font-size: .75rem;" class=" text-semi-dark text-center">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto eos nihil officia magni sequi dolorum, molestiae sapiente itaque ipsa optio!
-                                </p>
-                                <span class=" h4 text-primary fw-light">$ 100</span>
-                                <button class=" btn btn-primary px-3">See Details</button>
+                        <div class=" mx-4 mx-lg-3">
+                            <div class=" card shadow-lg mx-4 mx-lg-2 mx-xl-5 my-5">
+                                <div class=" card-body d-flex flex-column align-items-center justify-content-around">  
+                                    <span style="font-size: 1rem;" class=" text-black">Gold Package</span>
+                                    <p style="font-size: .75rem;" class=" text-semi-dark text-center">
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto eos nihil officia magni sequi dolorum, molestiae sapiente itaque ipsa optio!
+                                    </p>
+                                    <span class=" h4 text-primary fw-light">$ 100</span>
+                                    <button class=" btn btn-primary px-3">See Details</button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class=" mx-4 mx-lg-3">
-                        <div class=" card shadow-lg mx-4 mx-lg-5 my-5">
-                            <div class=" card-body d-flex flex-column align-items-center justify-content-around">  
-                                <span style="font-size: 1rem;" class=" text-black">Platinum Package</span>
-                                <p style="font-size: .75rem;" class=" text-semi-dark text-center">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto eos nihil officia magni sequi dolorum, molestiae sapiente itaque ipsa optio!
-                                </p>
-                                <span class=" h4 text-primary fw-light">$ 150</span>
-                                <button class=" btn btn-outline-primary px-3">See Details</button>
+                        <div class=" mx-4 mx-lg-3">
+                            <div class=" card shadow-lg mx-4 mx-lg-2 mx-xl-5 my-5">
+                                <div class=" card-body d-flex flex-column align-items-center justify-content-around">  
+                                    <span style="font-size: 1rem;" class=" text-black">Platinum Package</span>
+                                    <p style="font-size: .75rem;" class=" text-semi-dark text-center">
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto eos nihil officia magni sequi dolorum, molestiae sapiente itaque ipsa optio!
+                                    </p>
+                                    <span class=" h4 text-primary fw-light">$ 150</span>
+                                    <button class=" btn btn-outline-primary px-3">See Details</button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class=" mx-4 mx-lg-3">
-                        <div class=" card shadow-lg mx-4 mx-lg-5 my-5">
-                            <div class=" card-body d-flex flex-column align-items-center justify-content-around">  
-                                <span style="font-size: 1rem;" class=" text-black">Gold Package</span>
-                                <p style="font-size: .75rem;" class=" text-semi-dark text-center">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto eos nihil officia magni sequi dolorum, molestiae sapiente itaque ipsa optio!
-                                </p>
-                                <span class=" h4 text-primary fw-light">$ 100</span>
-                                <button class=" btn btn-primary px-3">See Details</button>
+                        <div class=" mx-4 mx-lg-3">
+                            <div class=" card shadow-lg mx-4 mx-lg-2 mx-xl-5 my-5">
+                                <div class=" card-body d-flex flex-column align-items-center justify-content-around">  
+                                    <span style="font-size: 1rem;" class=" text-black">Gold Package</span>
+                                    <p style="font-size: .75rem;" class=" text-semi-dark text-center">
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto eos nihil officia magni sequi dolorum, molestiae sapiente itaque ipsa optio!
+                                    </p>
+                                    <span class=" h4 text-primary fw-light">$ 100</span>
+                                    <button class=" btn btn-primary px-3">See Details</button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class=" mx-4 mx-lg-3">
-                        <div class=" card shadow-lg mx-4 mx-lg-5 my-5">
-                            <div class=" card-body d-flex flex-column align-items-center justify-content-around">  
-                                <span style="font-size: 1rem;" class=" text-black">Platinum Package</span>
-                                <p style="font-size: .75rem;" class=" text-semi-dark text-center">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto eos nihil officia magni sequi dolorum, molestiae sapiente itaque ipsa optio!
-                                </p>
-                                <span class=" h4 text-primary fw-light">$ 150</span>
-                                <button class=" btn btn-outline-primary px-3">See Details</button>
+                        <div class=" mx-4 mx-lg-3">
+                            <div class=" card shadow-lg mx-4 mx-lg-2 mx-xl-5 my-5">
+                                <div class=" card-body d-flex flex-column align-items-center justify-content-around">  
+                                    <span style="font-size: 1rem;" class=" text-black">Platinum Package</span>
+                                    <p style="font-size: .75rem;" class=" text-semi-dark text-center">
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto eos nihil officia magni sequi dolorum, molestiae sapiente itaque ipsa optio!
+                                    </p>
+                                    <span class=" h4 text-primary fw-light">$ 150</span>
+                                    <button class=" btn btn-outline-primary px-3">See Details</button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class=" mx-4 mx-lg-3">
-                        <div class=" card shadow-lg mx-4 mx-lg-5 my-5">
-                            <div class=" card-body d-flex flex-column align-items-center justify-content-around">  
-                                <span style="font-size: 1rem;" class=" text-black">Silver Package</span>
-                                <p style="font-size: .75rem;" class=" text-semi-dark text-center">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto eos nihil officia magni sequi dolorum, molestiae sapiente itaque ipsa optio!
-                                </p>
-                                <span class=" h4 text-primary fw-light">$ 50</span>
-                                <button class=" btn btn-outline-primary px-3">See Details</button>
+                        <div class=" mx-4 mx-lg-3">
+                            <div class=" card shadow-lg mx-4 mx-lg-2 mx-xl-5 my-5">
+                                <div class=" card-body d-flex flex-column align-items-center justify-content-around">  
+                                    <span style="font-size: 1rem;" class=" text-black">Silver Package</span>
+                                    <p style="font-size: .75rem;" class=" text-semi-dark text-center">
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto eos nihil officia magni sequi dolorum, molestiae sapiente itaque ipsa optio!
+                                    </p>
+                                    <span class=" h4 text-primary fw-light">$ 50</span>
+                                    <button class=" btn btn-outline-primary px-3">See Details</button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class=" col-12 p-5"></div>
             </div>
         </div>
     </section>
     <!-- Our Pricing end -->
 
+    <div class=" col-12 p-5"></div>
+
     <!-- content-us start -->
-    <section class=" container-fluid content-us-div">
+    <section class=" container-fluid content-us-div" id="content-us-div">
         <img src="_data/svg/Content-Us_Bg.svg" class=" content-bg">
         <div class=" container h-100">
             <div class=" row">
-                <div class=" col-12 d-flex flex-column align-items-center mt-5 mb-3">
+                <div class=" col-12 d-flex flex-column align-items-center mt-5 mb-3 wow animate__flipInX animate__delay-1s">
                     <span class=" text-secondary">Content Us</span>
                     <h2 class=" fw-light">Get Start With Us</h2>
                 </div>
-                <div class=" col-12 col-lg-6">
+                <div class=" col-12 col-lg-6 wow animate__bounceIn animate__delay-2s">
                     <form>
                         <div class=" form-floating mb-3 text-primary">
                             <input type="text" name="name" id="name" class=" form-control" placeholder="Name">
@@ -332,11 +347,11 @@
                         <button class=" btn btn-primary px-5 mb-3">Subscribe</button>
                     </form>
                 </div>
-                <div class=" col-12 col-lg-6">
+                <div class=" col-12 col-lg-6 wow animate__bounceIn animate__delay-2s">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96376.17535920777!2d96.0057830396764!3d21.940504298399!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30cb6d23f0d27411%3A0x24146be01e4e5646!2sMandalay!5e1!3m2!1sen!2smm!4v1645000428248!5m2!1sen!2smm" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
             </div>
-            <div class=" row h-100 text-white">
+            <div class=" row h-100 text-white wow animate__fadeIn animate__delay-2s">
                 <div class="col-6 col-lg-3 d-flex flex-column align-items-center mt-5">
                     <span class=" mb-3 fw-bold" style="font-size: 2.75rem;">Logo.</span>
                     <p class="text-white fs-3">Stay in touch</p>
@@ -407,9 +422,24 @@
     <!-- content-us end -->
 
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script src="./node_modules/slick-carousel/slick/slick.min.js"></script>
+    <script src="./node_modules/wow.js/dist/wow.min.js"></script>
+    <script src="./js/script.js"></script>
     <script>
+        // wow.js
+        wow = new WOW(
+                      {
+                      boxClass:     'wow',      // default
+                      animateClass: 'animate__animated', // default
+                      offset:       0,          // default
+                      mobile:       true,       // default
+                      live:         true        // default
+                    }
+                    )
+        wow.init();
+
+        // slick carousel
         $(document).ready(function(){
             $('.price-slick').slick({
                 slidesToShow: 3,

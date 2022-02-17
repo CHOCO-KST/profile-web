@@ -2,6 +2,28 @@ html {
     scroll-behavior: smooth;
 }
 
+.float-navbar {
+    display: inline-flex;
+    justify-content: space-around;
+    position: fixed;
+    top: -100px;
+    right: 3rem;
+    z-index: 5;
+    border-radius: 0 0 1rem 1rem;
+    transform: scale(.8);
+    transition: .75s;
+    &:hover {
+        top: -2.5px;
+        transform: scale(.95);
+    }
+}
+
+.float-navbar-active {
+    top: -7.5px;
+}
+
+
+
 .text-semi-dark {
     color: #6d6d6d;
 }
@@ -18,7 +40,7 @@ html {
     .home-side-link {
         position: absolute;
         left: 20px;
-        top: 40vh;
+        top: 37.5vh;
         img {
             transition: .25s;
             &:hover {
@@ -34,11 +56,8 @@ html {
         align-items: center;
         border-radius: 50%;
         position: absolute;
-        bottom: 3rem;
-        left: 0;
-        right: 0;
         box-shadow: 0 0 10px 5px #91919169;
-        margin: auto;
+        
         &:hover {
             box-shadow: 0 0 15px 8px #66666677;
         }
@@ -85,6 +104,12 @@ html {
     .xl-svg {
         width: 100% !important;
     }
+    .about-us-link {
+        bottom: 3rem;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
 }
 
 @media (max-width: 1023px) {
@@ -95,4 +120,14 @@ html {
             left: 15vh;
         }
     }
+    .about-us-link {
+        top: 37.5vh;
+        right: 20px;
+    }
 }
+
+:root {
+    --animate-delay: 0.7s;
+}
+
+@import "../node_modules/animate.css/animate.min.css"
