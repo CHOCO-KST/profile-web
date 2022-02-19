@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<div class=" loading-div">
+    <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+</div>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,17 +13,157 @@
     <link rel="stylesheet" href="vendor/feather-icons-web/feather.css">
     <link rel="stylesheet" href="./node_modules/slick-carousel/slick/slick.css">
     <link rel="stylesheet" href="./node_modules/slick-carousel/slick/slick-theme.css">
+    <link rel="stylesheet" href="./css/animate-it.css">
+    <style>
+        .loading-div {
+            background-color: #fff;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 100;
+        }
+        .lds-roller {
+            display: inline-block;
+            position: relative;
+            width: 80px;
+            height: 80px;
+        }
+        .lds-roller div {
+            animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+            transform-origin: 40px 40px;
+        }
+        .lds-roller div:after {
+            content: " ";
+            display: block;
+            position: absolute;
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: #000;
+            margin: -4px 0 0 -4px;
+        }
+        .lds-roller div:nth-child(1) {
+            animation-delay: -0.036s;
+        }
+        .lds-roller div:nth-child(1):after {
+            top: 63px;
+            left: 63px;
+        }
+        .lds-roller div:nth-child(2) {
+            animation-delay: -0.072s;
+        }
+        .lds-roller div:nth-child(2):after {
+            top: 68px;
+            left: 56px;
+        }
+        .lds-roller div:nth-child(3) {
+            animation-delay: -0.108s;
+        }
+        .lds-roller div:nth-child(3):after {
+            top: 71px;
+            left: 48px;
+        }
+        .lds-roller div:nth-child(4) {
+            animation-delay: -0.144s;
+        }
+        .lds-roller div:nth-child(4):after {
+            top: 72px;
+            left: 40px;
+        }
+        .lds-roller div:nth-child(5) {
+            animation-delay: -0.18s;
+        }
+        .lds-roller div:nth-child(5):after {
+            top: 71px;
+            left: 32px;
+        }
+        .lds-roller div:nth-child(6) {
+            animation-delay: -0.216s;
+        }
+        .lds-roller div:nth-child(6):after {
+            top: 68px;
+            left: 24px;
+        }
+        .lds-roller div:nth-child(7) {
+            animation-delay: -0.252s;
+        }
+        .lds-roller div:nth-child(7):after {
+            top: 63px;
+            left: 17px;
+        }
+        .lds-roller div:nth-child(8) {
+            animation-delay: -0.288s;
+        }
+        .lds-roller div:nth-child(8):after {
+            top: 56px;
+            left: 12px;
+        }
+        @keyframes lds-roller {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+    </style>
 </head>
 <body>
-    <div class=" float-navbar bg-secondary" id="float-navbar">
-        <ul class=" navbar-nav d-flex flex-row fw-bold">
-            <li class="nav-item mx-3"><a href="#home-div" class="nav-link text-light">HOME</a></li>
-            <li class="nav-item mx-3"><a href="#who-we-div" class="nav-link text-light">ABOUT</a></li>
-            <li class="nav-item mx-3"><a href="#service-div" class="nav-link text-light">SERVICE</a></li>
-            <li class="nav-item mx-3"><a href="#price-div" class="nav-link text-light">PRICE</a></li>
-            <li class="nav-item mx-3"><a href="#content-us-div" class="nav-link text-light">CONTACT</a></li>
-        </ul>
+    <!-- floating-lg navbar start -->
+    <div class=" d-none d-lg-block">
+        <div class=" float-navbar bg-secondary" id="float-navbar">
+            <ul class=" navbar-nav d-flex flex-row fw-bold">
+                <li class="nav-item px-2 m-1"><a href="#home-div" class="nav-link text-light">HOME</a></li>
+                <li class="nav-item px-2 m-1"><a href="#who-we-div" class="nav-link text-light">ABOUT</a></li>
+                <li class="nav-item px-2 m-1"><a href="#service-div" class="nav-link text-light">SERVICE</a></li>
+                <li class="nav-item px-2 m-1"><a href="#price-div" class="nav-link text-light">PRICE</a></li>
+                <li class="nav-item px-2 m-1"><a href="#content-us-div" class="nav-link text-light">CONTACT</a></li>
+            </ul>
+        </div>
     </div>
+    <!-- floating-lg navbar end -->
+
+    <!-- mobile sidebar start -->
+    <div class=" d-none w-100 vh-100" id="sidebar-div">
+        <div class=" w-100 h-100">
+            <div class=" bg-soft-dark w-100 h-100"></div>
+            <div class=" sidebar-nav w-50 h-100 bg-light animate__animated">
+                <div class=" d-flex flex-row align-items-end justify-content-center my-3">
+                    <button class=" btn btn-light" id="sidebar-close-btn">
+                        <i class=" feather feather-x"></i>
+                    </button>
+                    <img src="_data/svg/logo-header.svg" alt="logo">
+                    <h3>Marketing</h3>
+                </div>
+                <hr class=" my-5">
+                <ul class=" nav nav-pills flex-column mb-auto text-center">
+                    <li class=" nav-item mb-5 bg-primary mx-3 mx-md-5 rounded">
+                        <a href="#home-div" class=" nav-link text-light" style="font-size: 1.5rem;">HOME</a>
+                    </li>
+                    <li class=" nav-item mb-5 bg-primary mx-3 mx-md-5 rounded">
+                        <a href="#who-we-div" class=" nav-link text-light" style="font-size: 1.5rem;">ABOUT</a>
+                    </li>
+                    <li class=" nav-item mb-5 bg-primary mx-3 mx-md-5 rounded">
+                        <a href="#service-div" class=" nav-link text-light" style="font-size: 1.5rem;">SERVICE</a>
+                    </li>
+                    <li class=" nav-item mb-5 bg-primary mx-3 mx-md-5 rounded">
+                        <a href="#price-div" class=" nav-link text-light" style="font-size: 1.5rem;">PRICE</a>
+                    </li>
+                    <li class=" nav-item mb-5 bg-primary mx-3 mx-md-5 rounded">
+                        <a href="#content-us-div" class=" nav-link text-light" style="font-size: 1.5rem;">CONTENT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- mobile sidebar end -->
+
     <!-- home start -->
     <section class=" container-fluid home-div" id="home-div">
         <img src="_data/svg/Bg Shape.svg" class=" bg-shape">
@@ -31,35 +174,35 @@
             <img src="./_data/svg/004-instagram.svg" width="20" height="20" class=" mb-3">
             <div class=" bg-primary" style="width: .25rem; height: 2.5rem;" ></div>
         </div>
-        <a class=" about-us-link wow animate__fadeIn animate__delay-2s" href="#who-we">
-            <img src="./_data/svg/mouse.svg" class=" animate__animated">
+        <a class=" about-us-link wow animate__fadeIn animate__delay-2s bg-light" href="#who-we-div">
+            <img src="./_data/svg/mouse.svg" class=" animate__animated animate__pulse" style="animation-iteration-count: infinite;">
         </a>
-        <div class=" container">
+        <div class=" container px-0">
             <div class=" row vh-100">
                 <!-- navbar start -->
                 <div class=" col-12">
-                    <div class=" container">
-                        <nav class=" navbar navbar-light d-flex justify-content-between">
-                            <div class=" navbar-brand d-flex flex-row align-items-end animate__animated animate__flipInX">
-                                <img src="_data/svg/logo-header.svg" alt="logo" width="50%">
-                                <h1>Marketing</h1>
-                            </div>
-                            <div class=" d-none d-lg-block animate__animated animate__flipInX animate__delay-2s">
-                                <ul class=" navbar-nav d-flex flex-row fw-bolder">
-                                    <li class="nav-item ms-5"><a href="#home-div" class="nav-link text-light">HOME</a></li>
-                                    <li class="nav-item ms-5"><a href="#who-we-div" class="nav-link text-light">ABOUT</a></li>
-                                    <li class="nav-item ms-5"><a href="#service-div" class="nav-link text-light">SERVICE</a></li>
-                                    <li class="nav-item ms-5"><a href="#price-div" class="nav-link text-light">PRICE</a></li>
-                                    <li class="nav-item ms-5"><a href="#content-us-div" class="nav-link text-light">CONTACT</a></li>
-                                </ul>
-                            </div>
-                            <div class=" d-block d-lg-none animate__animated animate__heartBeat">
-                                <button class=" btn btn-light me-3" style="border-radius: 50% !important;">
-                                    <i class=" feather feather-menu"></i>
-                                </button>
-                            </div>
-                        </nav>
-                    </div>
+                    <nav class=" navbar navbar-light d-flex justify-content-between">
+                        <div class=" navbar-brand d-flex flex-row align-items-end animate__animated animate__flipInX">
+                            <img src="_data/svg/logo-header.svg" alt="logo" width="50%">
+                            <h1>Marketing</h1>
+                        </div>
+                        <div class=" d-none d-lg-block animate__animated animate__flipInX animate__delay-2s">
+                            <ul class=" navbar-nav nav nav-pills d-flex flex-row fw-bolder">
+                                <li class="nav-item px-3 mx-1"><a href="#home-div" class="nav-link text-light">HOME</a></li>
+                                <li class="nav-item px-3 mx-1"><a href="#who-we-div" class="nav-link text-light">ABOUT</a></li>
+                                <li class="nav-item px-3 mx-1"><a href="#service-div" class="nav-link text-light">SERVICE</a></li>
+                                <li class="nav-item px-3 mx-1"><a href="#price-div" class="nav-link text-light">PRICE</a></li>
+                                <li class="nav-item px-3 mx-1"><a href="#content-us-div" class="nav-link text-light">CONTACT</a></li>
+                            </ul>
+                        </div>
+                        <!-- mobile sidebar button start -->
+                        <div class=" d-block d-lg-none animate__animated animate__heartBeat" id="menu-btn">
+                            <button class=" btn btn-light me-3" style="border-radius: 50% !important;">
+                                <i class=" feather feather-menu"></i>
+                            </button>
+                        </div>
+                        <!-- mobile sidebar button end -->
+                    </nav>
                 </div>
                 <!-- navbar end -->
                 <!-- social media start -->
@@ -122,7 +265,7 @@
             <!-- Services Cards start -->
             <div class=" col-12 row">
                 <div class=" col-12 col-md-6 col-lg-4 wow animate__fadeInRight animate__delay-1s">
-                    <div class=" card shadow-lg mx-2 mx-md-3 mx-lg-2 mx-xl-5 mt-5">
+                    <div class=" card mx-2 mx-md-3 mx-lg-2 mx-xl-5 mt-5">
                         <div class=" card-body d-flex flex-column align-items-center justify-content-around">
                             <img src="_data/svg/sm-process.svg" alt="process" class=" w-25">
                             <br>    
@@ -138,7 +281,7 @@
                     </div>
                 </div>
                 <div class=" col-12 col-md-6 col-lg-4 wow animate__zoomIn animate__delay-2s">
-                    <div class=" card shadow-lg mx-2 mx-md-3 mx-lg-2 mx-xl-5 mt-5">
+                    <div class=" card mx-2 mx-md-3 mx-lg-2 mx-xl-5 mt-5">
                         <div class=" card-body d-flex flex-column align-items-center justify-content-around">
                             <img src="_data/svg/sm-social-media.svg" alt="process" class=" w-25">
                             <br>    
@@ -155,7 +298,7 @@
                     </div>
                 </div>
                 <div class=" col-12 col-md-6 col-lg-4 wow animate__fadeInLeft animate__delay-1s">
-                    <div class=" card shadow-lg mx-2 mx-md-3 mx-lg-2 mx-xl-5 mt-5">
+                    <div class=" card mx-2 mx-md-3 mx-lg-2 mx-xl-5 mt-5">
                         <div class=" card-body d-flex flex-column align-items-center justify-content-around">
                             <img src="_data/svg/sm-responsive.svg" alt="process" class=" w-25">
                             <br>    
@@ -172,7 +315,7 @@
                     </div>
                 </div>
                 <div class=" col-12 col-md-6 col-lg-4 wow animate__fadeInRight animate__delay-2s">
-                    <div class=" card shadow-lg mx-2 mx-md-3 mx-lg-2 mx-xl-5 mt-5">
+                    <div class=" card mx-2 mx-md-3 mx-lg-2 mx-xl-5 mt-5">
                         <div class=" card-body d-flex flex-column align-items-center justify-content-around">
                             <img src="_data/svg/sm-analysis.svg" alt="process" class=" w-25">
                             <br>    
@@ -189,7 +332,7 @@
                     </div>
                 </div>
                 <div class=" col-12 col-md-6 col-lg-4 wow animate__zoomIn animate__delay-3s">
-                    <div class=" card shadow-lg mx-2 mx-md-3 mx-lg-2 mx-xl-5 mt-5">
+                    <div class=" card mx-2 mx-md-3 mx-lg-2 mx-xl-5 mt-5">
                         <div class=" card-body d-flex flex-column align-items-center justify-content-around">
                             <img src="_data/svg/sm-social-media-1.svg" alt="process" class=" w-25">
                             <br>    
@@ -206,7 +349,7 @@
                     </div>
                 </div>
                 <div class=" col-12 col-md-6 col-lg-4 wow animate__fadeInLeft animate__delay-2s">
-                    <div class=" card shadow-lg mx-2 mx-md-3 mx-lg-2 mx-xl-5 mt-5">
+                    <div class=" card mx-2 mx-md-3 mx-lg-2 mx-xl-5 mt-5">
                         <div class=" card-body d-flex flex-column align-items-center justify-content-around">
                             <img src="_data/svg/sm-computer.svg" alt="process" class=" w-25">
                             <br>    
@@ -241,7 +384,7 @@
                 <div class=" col-12 wow animate__bounceIn animate__delay-2s">
                     <div class=" price-slick">
                         <div class=" mx-4 mx-lg-3">
-                            <div class=" card shadow-lg mx-4 mx-lg-2 mx-xl-5 my-5">
+                            <div class=" card mx-4 mx-lg-2 mx-xl-5 my-5">
                                 <div class=" card-body d-flex flex-column align-items-center justify-content-around">  
                                     <span style="font-size: 1rem;" class=" text-black">Silver Package</span>
                                     <p style="font-size: .75rem;" class=" text-semi-dark text-center">
@@ -425,6 +568,7 @@
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script src="./node_modules/slick-carousel/slick/slick.min.js"></script>
     <script src="./node_modules/wow.js/dist/wow.min.js"></script>
+    <script src="./node_modules/waypoints/lib/jquery.waypoints.min.js"></script>
     <script src="./js/script.js"></script>
     <script>
         // wow.js

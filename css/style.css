@@ -1,6 +1,9 @@
-@import "../node_modules/animate.css/animate.min.css";
 html {
   scroll-behavior: smooth;
+}
+
+.text-semi-dark {
+  color: #6d6d6d;
 }
 
 .float-navbar {
@@ -11,20 +14,77 @@ html {
   right: 3rem;
   z-index: 5;
   border-radius: 0 0 1rem 1rem;
-  transform: scale(0.8);
-  transition: 0.75s;
+  transform: scale(0.85);
+  transition: 0.25s;
 }
 .float-navbar:hover {
   top: -2.5px;
   transform: scale(0.95);
+}
+.float-navbar li {
+  border-radius: 0 0 1rem 1rem;
+}
+.float-navbar .active-link {
+  background-color: #ffffff !important;
+}
+.float-navbar .active-link a {
+  color: #000 !important;
 }
 
 .float-navbar-active {
   top: -7.5px;
 }
 
-.text-semi-dark {
-  color: #6d6d6d;
+.float-bg {
+  position: fixed !important;
+  width: 35% !important;
+  z-index: 10 !important;
+}
+
+.float-btn {
+  position: fixed;
+  top: 1.75rem;
+  right: 1.5rem;
+  z-index: 11;
+}
+
+#sidebar-div {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  z-index: 20;
+}
+#sidebar-div div {
+  position: relative;
+}
+#sidebar-div div .bg-soft-dark {
+  background-color: rgba(0, 0, 0, 0.212);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#sidebar-div div .sidebar-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: 5px 0 15px 5px #61616170;
+}
+#sidebar-div div .sidebar-nav div {
+  position: relative;
+}
+#sidebar-div div .sidebar-nav div button {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  font-size: 2rem;
+}
+#sidebar-div div .sidebar-nav .active-link {
+  background-color: #fff !important;
+  border: 2.5px solid #1A129F;
+}
+#sidebar-div div .sidebar-nav .active-link a {
+  color: #1A129F !important;
+  font-weight: bold !important;
 }
 
 .home-div {
@@ -34,7 +94,7 @@ html {
   position: absolute;
   top: 0;
   right: 0;
-  width: 50%;
+  width: 55%;
   z-index: -1;
 }
 .home-div .home-side-link {
@@ -61,10 +121,29 @@ html {
 .home-div .about-us-link:hover {
   box-shadow: 0 0 15px 8px #66666677;
 }
+.home-div #menu-btn {
+  transform: scale(1.25);
+}
+.home-div .active-link {
+  border: 2.5px solid #fff;
+  border-radius: 1rem;
+}
 
 .service-div .card {
   border-radius: 2.5rem !important;
   height: 22.5rem;
+  transition: 0.5s;
+  box-shadow: 0 0 10px 5px #5252522f;
+}
+.service-div .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px 7.5px #5252524f;
+}
+.service-div .card img {
+  transition: 0.5s;
+}
+.service-div .card:hover img {
+  transform: scale(1.25);
 }
 
 .price-div {
@@ -119,7 +198,22 @@ html {
     top: 37.5vh;
     right: 20px;
   }
+
+  .bg-shape {
+    right: -1rem !important;
+  }
 }
-:root {
-  --animate-delay: 0.7s;
+@media (max-width: 720px) {
+  .float-bg {
+    width: 40%;
+  }
+
+  .sidebar-nav {
+    width: 75% !important;
+  }
+}
+@media (max-width: 540px) {
+  .float-bg {
+    width: 45% !important;
+  }
 }/*# sourceMappingURL=style.css.map */
